@@ -45,6 +45,101 @@
         </ul>
     </section>
 
+    <div class="cart-container">
+        <section class="product-summary">
+        <div class="product-list">
+            
+        <div class="cart-main">
+            
+
+                <h2 class="section-title">Osobní údaje/Doprava</h2>
+                
+                <form class="checkout-form" action="kosik-krok3.html" method="get">
+
+                    <div class="shipping-options">
+                <label class="shipping-card">
+                    <input type="radio" name="shipping" value="zasilkovna" required>
+                    <div class="card-content">
+                        <span class="shipping-name">Zásilkovna</span>
+                        <span class="shipping-price">79 Kč</span>
+                    </div>
+                </label>
+
+                <label class="shipping-card">
+                    <input type="radio" name="shipping" value="ppl">
+                    <div class="card-content">
+                        <span class="shipping-name">PPL - doručení na adresu</span>
+                        <span class="shipping-price">119 Kč</span>
+                    </div>
+                </label>
+
+                <label class="shipping-card">   
+                    <input type="radio" name="shipping" value="osobni">
+                    <div class="card-content">
+                        <span class="shipping-name">Osobní odběr (Frenštát p. R.)</span>
+                        <span class="shipping-price">Zdarma</span>
+                    </div>
+                </label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Jméno</label>
+                            <input type="text" id="name" name="name" placeholder="Jan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Příjmení</label>
+                            <input type="text" id="surname" name="surname" placeholder="Novák" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="jan.novak@seznam.cz" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefonní číslo</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+420 123 456 789" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Adresa (Ulice a č.p.)</label>
+                        <input type="text" id="address" name="address" placeholder="Křižíkova 1258" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">Město</label>
+                            <input type="text" id="city" name="city" placeholder="Frenštát p. R." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">PSČ</label>
+                            <input type="text" id="zip" name="zip" placeholder="744 01" required>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <button type="submit" class="next">Pokračovat</button>
+                        <a href="kosik-krok1.html" class="cancel">Zpět</a>
+                    </div>
+                </form>
+        </div>
+    </div>    
+
+            
+        </div>
+            
+            <aside class="order-summary">
+                <h3>Shrnutí produktů</h3>
+                <br><br>
+                <p>Celkem: 1 299 Kč</p>
+            </aside>
+
+    </section>
+    </div>
+
+
+    
 
 <footer class="footer">
         <div class="footer-container">
