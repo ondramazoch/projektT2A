@@ -75,17 +75,6 @@ header .logo {
 }
 
 
-.slogan {    
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    white-space: nowrap; 
-    font-size: 1.5rem;   
-    font-weight: bold;
-
-}
 
 
 .footer {
@@ -302,4 +291,23 @@ header .logo {
     font-weight: 500;
 
     transition: background-color 0.2s ease;
+}
+
+
+.product-card--category .product-info {
+    padding: 14px;
+    text-align: center;
+}
+
+.product-card--category .product-title {
+    font-size: 18px;
+}
+
+.product-card--category .product-image img {
+    height: 200px;
+}
+
+
+.product-card--category .product-bottom {
+    display: none;
 }
