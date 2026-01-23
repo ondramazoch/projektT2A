@@ -1,0 +1,319 @@
+/* --- RESPONSIVITA PRO TABLETY A MOBILY --- */
+
+/* Pro zařízení menší než 992px (tablety) */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column; 
+        min-height: auto;
+        padding: 15px 0;
+    }
+
+    header .logo {
+        margin-left: 0;
+        height: 60px; 
+        margin-bottom: 10px;
+    }
+
+    .header-nav {
+        margin: 10px;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .search-input {
+        width: 140px; 
+    }
+
+    
+    body {
+        padding-top: 10rem; 
+    }
+    
+    .nav {
+        top: 10rem; 
+    }
+}
+
+/* Pro telefony (menší než 600px) */
+@media (max-width: 600px) {
+    .header-nav {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .search-form {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .search-input {
+        flex-grow: 1; 
+    }
+
+    .hnav {
+        width: 90%; 
+        text-align: center;
+    }
+
+    body {
+        padding-top: 18rem;
+    }
+
+    .nav {
+        top: 18rem;
+        position: relative; 
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+}
+
+/* --- RESPONSIVITA PRO NAVIGACI (navigation.html) --- */
+
+@media (max-width: 768px) {
+    .nav {
+        position: relative; 
+        top: 0; 
+        min-height: auto;
+        padding: 10px 0;
+    }
+
+    .nav-list {
+        flex-direction: column; 
+        gap: 15px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav a {
+        display: block;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
+
+/* --- RESPONSIVITA PRO PATIČKU (footer.html) --- */
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-right ul {
+        display: inline-block; 
+        text-align: left;
+    }
+
+    .footer-left .logo {
+        margin: 0 auto;
+    }
+}
+
+/* Extra úprava pro velmi malé telefony */
+@media (max-width: 480px) {
+    .footer-nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-nav {
+        margin: 5px 0;
+    }
+    .nav{
+        z-index: 995;
+    }
+}
+
+/* --- RESPONSIVITA PRO HLAVNÍ OBSAH (index.html) --- */
+
+/* Pro tablety (max 992px) - 2 sloupce */
+@media (max-width: 992px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        margin-inline: 20px;
+        gap: 20px;
+    }
+
+    .slevy {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+}
+
+/* Pro mobily (max 600px) - 1 sloupec */
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: 1fr; 
+        margin-inline: 15px;
+        gap: 25px;
+    }
+
+    .product-card-sale {
+        max-width: 100%; 
+    }
+
+    .product-image img {
+        height: 200px; 
+    }
+
+    .slevy {
+        margin-top: 2vh;
+        font-size: 1rem;
+    }
+
+    .slevy h2 {
+        font-size: 1.1rem;
+        white-space: normal; 
+        padding: 5px;
+    }
+}
+
+/* --- FIX PRO KOŠÍK A FORMULÁŘE NA MOBILU --- */
+@media (max-width: 768px) {
+    .product-summary {
+        grid-template-columns: 1fr; 
+    }
+
+    .order-summary {
+        position: static; 
+        margin-top: 20px;
+    }
+
+    .product-card-small {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .form-row {
+        flex-direction: column; 
+        gap: 0;
+    }
+}
+
+/* --- RESPONSIVITA PRO KATEGORIE (kategorie.html) --- */
+
+
+.section-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+}
+
+@media (max-width: 992px) {
+    .product-card--category {
+        padding: 15px;
+    }
+    
+    .category-image {
+        height: 150px; 
+    }
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 1.6rem;
+        margin-top: 20px;
+    }
+
+    .product-card--category {
+        padding: 10px;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .category-image {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .category-image img {
+        max-height: 60px;
+    }
+
+    .product-card--category .product-info {
+        margin-top: 0;
+        text-align: left; 
+    }
+    
+    .product-card--category .product-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* --- RESPONSIVITA PRO KOŠÍK KROK 1 --- */
+
+@media (max-width: 992px) {
+    
+    .product-summary {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    
+    .order-summary {
+        position: static;
+        width: 100%;
+        order: -1; 
+        margin-bottom: 20px;
+    }
+
+    .napis {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .product-card-small {
+        flex-direction: column; 
+        text-align: center;
+        padding: 15px;
+    }
+
+    .product-image-small img {
+        width: 120px; 
+        height: auto;
+    }
+
+    .product-info {
+        width: 100%;
+    }
+
+    .product-bottom {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+ 
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .buttons a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+    
+    
+    .cart-container {
+        padding-top: 220px; 
+    }
+}
