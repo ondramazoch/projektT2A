@@ -131,9 +131,7 @@
     .footer-nav {
         margin: 5px 0;
     }
-    .nav{
-        z-index: 995;
-    }
+    
 }
 
 /* --- RESPONSIVITA PRO HLAVNÍ OBSAH (index.html) --- */
@@ -199,6 +197,9 @@
     .form-row {
         flex-direction: column; 
         gap: 0;
+    }
+    .nav{
+        z-index: 995;
     }
 }
 
