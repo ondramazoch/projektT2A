@@ -2,6 +2,7 @@
     max-width: 1200px;
     margin: 60px auto;
     padding: 0 20px;
+    min-height: 500px;
 }
 
 .products-grid {

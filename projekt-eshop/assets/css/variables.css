@@ -1,6 +1,6 @@
 .slevy {
-    background-color: red;
-    color: yellow;
+    background-color: #ff8800;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 1.2rem;
     text-align: center;
@@ -316,4 +316,23 @@
 .kontakt-form {
     border: 1px solid #ddd;
     background-color: #f9f9f9;
+} 
+
+.product-detail-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 10vh;    
+    min-height: 70vh;
 }
+
+.product-image{
+    grid-column:  2 / 3 ;
+    padding: 20px;
+    align-content: center;
+}
+
+.product-info-detail{
+    grid-column: 3 / 5 ;
+    padding: 20px;
+}
+

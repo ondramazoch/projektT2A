@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/main.css">
+  <title>ALL4DISCGOLF</title>
 </head>
   <body>
     
@@ -36,25 +37,37 @@
             </ul>
     </nav>
 
-<div class="cart-container">
-    <section class="order-confirmation">
-        <div class="confirmation-content">
-            
-            <h2 class="napis">Tady nic není...</h2>
-            
-            <p class="conf-text">
-                Hledaný obsah nebyl nalezen. Zkuste prosím jiné klíčové slovo nebo se vraťte na domovskou stránku.
-            </p>
+    <section class="product-detail">
+        <div class="product-detail-container">
+        
+            <div class="product-image">
+                <img src="assets/images/logo.png" alt="Název produktu" class="main-product-image">
+            </div>
 
-            <div class="buttons">
-                <a href="index.html" class="next">Zpět do e-shopu</a>
+
+            <div class="product-info-detail">
+                <div class="product-info-detail-container">
+                    <h1 class="product-title-detail">Název produktu</h1>
+                    <p class="product-price-detail">999 Kč</p>
+                    <p class="product-description-detail">
+                        Podrobný popis produktu. 
+                    </p>
+
+                    <form class="add-to-cart-form" action="kosik-krok1.html" method="post">
+                        <label for="quantity">Množství:</label>
+                        <input type="number" id="quantity" name="quantity" value="1" min="1" class="quantity-input">
+
+                        <button type="submit" class="add-to-cart-btn">Přidat do košíku</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
-</div>
 
 
-<footer class="footer">
+
+
+    <footer class="footer">
         <div class="footer-container">
 
             
@@ -88,12 +101,7 @@
                     <li>Neděle: Zavřeno</li>
                 </ul>
             </div>
-
         </div>
     </footer>
-
-
-
-
   </body>
 </html>
