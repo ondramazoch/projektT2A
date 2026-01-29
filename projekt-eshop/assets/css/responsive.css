@@ -255,8 +255,6 @@
     }
 }
 
-/* --- RESPONSIVITA PRO KOŠÍK KROK 1 --- */
-
 @media (max-width: 992px) {
     
     .product-summary {
@@ -316,5 +314,115 @@
     
     .cart-container {
         padding-top: 220px; 
+    }
+
+    .product-btn {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .product-detail-main {
+        gap: 20px;
+    }
+    
+    .product-detail-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .product-detail-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-detail-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .product-specs ul {
+        display: inline-block;
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .product-detail-container {
+        padding-top: 220px; 
+    }
+
+    .product-detail-title {
+        font-size: 1.8rem;
+    }
+
+    .add-to-cart-btn {
+        width: 100%;
+    }
+}
+
+
+/* --- RESPONSIVITA PRO KOŠÍK KROK 1 --- */
+
+@media (max-width: 992px) {
+    /* Přepnutí gridu na jeden sloupec */
+    .product-summary {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Shrnutí objednávky už nebude fixní na boku, ale nahoře nebo pod produkty */
+    .order-summary {
+        position: static;
+        width: 100%;
+        order: -1; /* Volitelné: posune shrnutí nad seznam produktů na mobilu */
+        margin-bottom: 20px;
+    }
+
+    .napis {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Úprava malé karty produktu pro úzké displeje */
+    .product-card-small {
+        flex-direction: column; /* Obrázek, text a select pod sebou */
+        text-align: center;
+        padding: 15px;
+    }
+
+    .product-image-small img {
+        width: 120px; /* Na mobilu může být obrázek o něco větší, když je sám na řádku */
+        height: auto;
+    }
+
+    .product-info {
+        width: 100%;
+    }
+
+    .product-bottom {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    /* Tlačítka pod sebou pro snadnější klikání palcem */
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .buttons a {
+        width: 100%;
+        text-align: center;
+        padding: 12px 0;
+    }
+    
+    /* Horní odsazení kontejneru kvůli fixnímu headeru */
+    .cart-container {
+        padding-top: 220px; /* Musí odpovídat výšce tvého mobilního headeru */
     }
 }
