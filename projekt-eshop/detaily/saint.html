@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <title>ALL4DISCGOLF</title>
+</head>
+  <body>
+    
+    <header>
+        <a href="../index.html">
+            <img src="../assets/images/logo.png" alt="Logo E-shopu" class="logo" href="../index.html">
+        </a>
+
+        <nav class="header-nav">
+          <form class="search-form" action="../vyhledavani.html" method="get">
+            <input
+                type="search"
+                name="q"
+                placeholder="Hledat produkty..."
+                class="search-input"
+                >
+            <button type="submit" class="search-btn">🔍</button>
+          </form>
+          <a href="../index.html" class="hnav">Domů 🏠</a>
+          <a href="../kosik-krok1.html" class="hnav">Košík 🛒</a>
+        </nav>
+    </header>
+
+    <nav class="nav">
+            <ul class="nav-list">
+                    <li><a href="../kontakt.html">Kontakt</a></li>
+                    <li><a href="../kategorie.html">Kategorie</a></li>
+                    <li><a href="../o-nas.html">O nás</a></li>
+            </ul>
+    </nav>
+
+    <main class="product-detail-container">
+        <div class="product-detail-main">
+            
+            <div class="product-detail-image">
+                <img src="../assets/images/saint.jpg" alt="Název produktu">
+            </div>
+
+            <div class="product-detail-info">
+                <h1 class="product-detail-title">Gold Saint</h1>
+                <p class="product-detail-price">479 Kč</p>
+                
+                <div class="product-detail-description">
+                    <h3>Popis produktu</h3>
+                    <p>Skvělý pro začátečníky i pokročilé hráče.</p>
+                </div>
+
+                <div class="product-specs">
+                    <form class="specs">
+                        <label for="color-select">Barva:</label>
+                        <select id="color-select" name="color">
+                            <option value="red">Červená</option>
+                            <option value="blue">Modrá</option>
+                            <option value="green">Zelená</option>
+                            <option value="yellow">Žlutá</option>
+                        </select>
+                        <label for="weight-select">Váha:</label>
+                        <select id="weight-select" name="weight">
+                            <option value="" disabled selected>Vyberte váhu</option>
+                            <option value="red">173-175g</option>
+                            <option value="blue">170-172g</option>
+                            <option value="green">165-169g</option>
+                            <option value="yellow">160-164g</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="product-detail-actions">
+                    <div class="quantity-selector">
+                        <label for="qty">Množství:</label>
+                        <input type="number" id="qty" name="quantity" value="1" min="1">
+                    </div>
+                    <button class="add-to-cart-btn">Přidat do košíku 🛒</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<footer class="footer">
+        <div class="footer-container">
+
+            
+            <div class="footer-section footer-left">
+                <a href="../index.html">
+                    <img src="../assets/images/logo.png" alt="Logo E-shopu" class="logo" href="../index.html">
+                </a>
+            </div>
+
+            
+            <div class="footer-section footer-center">
+                <div class="footer-nav-links">
+                    <a href="../kontakt.html" class="footer-nav">Kontakt</a>
+                    <a href="../o-nas.html" class="footer-nav">O nás</a>
+                </div>
+
+                <p>&copy; 2026 E-shop. Všechna práva vyhrazena.</p>
+                <p>Křižíkova 1258, Frenštát pod Radhoštěm, 744 01</p>
+            </div>
+
+            
+            <div class="footer-section footer-right">
+                <h2>Otevírací doba</h2>
+                <ul>
+                    <li>Pondělí: 9:00 – 17:00</li>
+                    <li>Úterý: 9:00 – 17:00</li>
+                    <li>Středa: 9:00 – 17:00</li>
+                    <li>Čtvrtek: 9:00 – 17:00</li>
+                    <li>Pátek: 9:00 – 17:00</li>
+                    <li>Sobota: Zavřeno</li>
+                    <li>Neděle: Zavřeno</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+  </body>
+</html>
