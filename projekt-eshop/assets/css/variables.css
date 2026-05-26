@@ -395,3 +395,14 @@
     padding: 8px 0;
     border-bottom: 1px solid #eee;
 }
+
+.error {
+    color: #dc2626;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: block;
+}
+
+.input--error {
+    border-color: #dc2626;
+}

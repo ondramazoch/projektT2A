@@ -1,0 +1,36 @@
+<footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-section footer-left">
+                <a href="index.php">
+                    <img src="assets/images/logo.png" alt="Logo E-shopu" class="logo">
+                </a>
+            </div>
+
+            <div class="footer-section footer-center">
+                <div class="footer-nav-links">
+                    <a href="kontakt.php" class="footer-nav">Kontakt</a>
+                    <a href="o-nas.php" class="footer-nav">O nás</a>
+                </div>
+                <p>&copy; 2026 E-shop. Všechna práva vyhrazena.</p>
+                <p>Křižíkova 1258, Frenštát pod Radhoštěm, 744 01</p>
+            </div>
+
+            <div class="footer-section footer-right">
+                <h2>Otevírací doba</h2>
+                <ul>
+                    <li>Pondělí: 9:00 – 17:00</li>
+                    <li>Úterý: 9:00 – 17:00</li>
+                    <li>Středa: 9:00 – 17:00</li>
+                    <li>Čtvrtek: 9:00 – 17:00</li>
+                    <li>Pátek: 9:00 – 17:00</li>
+                    <li>Sobota: Zavřeno</li>
+                    <li>Neděle: Zavřeno</li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
