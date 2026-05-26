@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product_id'])) {
 
 // Odebrání položky
 if (isset($_GET['remove'])) {
-    $cart->remove((int) $_GET['remove']);
+    $cart->remove((int) $_GET['remove'], $_GET['variant'] ?? '');
     header('Location: kosik.php');
     exit;
 }
@@ -53,9 +53,9 @@ $cartItemCount = $cart->getTotalQuantity();
                 <div class="cart-main">
                     <?php foreach ($items as $item): ?>
                         <div class="product-card-small">
-                            <a href="produkt.php?slug=" class="product-image-small">
+                            <div class="product-image-small">
                                 <img src="<?= htmlspecialchars($item->image) ?>" alt="<?= htmlspecialchars($item->productName) ?>">
-                            </a>
+                            </div>
                             <div class="product-info">
                                 <h3 class="product-title"><?= htmlspecialchars($item->productName) ?></h3>
                                 <?php if ($item->variant !== ''): ?>
@@ -68,7 +68,7 @@ $cartItemCount = $cart->getTotalQuantity();
                             <div class="quantity-selector">
                                 <label>Množství: <?= $item->quantity ?></label>
                             </div>
-                            <a href="kosik.php?remove=<?= $item->productId ?>" class="cancel" title="Odebrat" >✕</a>
+                            <a href="kosik.php?remove=<?= $item->productId ?>&variant=<?= urlencode($item->variant) ?>" class="cancel" title="Odebrat">✕</a>
                         </div>
                     <?php endforeach; ?>
                 </div>

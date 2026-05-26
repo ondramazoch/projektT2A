@@ -14,7 +14,7 @@ http_response_code(404);
     <section class="order-confirmation">
         <div class="confirmation-content">
 
-            <h2 class="napis">Tady nic není... 🙁</h2>
+            <h2 class="napis">Tady nic není...</h2>
 
             <p class="conf-text">
                 Hledaný obsah nebyl nalezen. Zkuste prosím jiné klíčové slovo nebo se vraťte na domovskou stránku.
